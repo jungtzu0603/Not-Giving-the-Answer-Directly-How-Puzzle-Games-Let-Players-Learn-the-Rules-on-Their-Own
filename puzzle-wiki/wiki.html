@@ -1,0 +1,304 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>解謎教學 LLM Wiki</title><link rel="stylesheet" href="style.css"></head><body><header><span>解謎教學 / LLM WIKI</span><div><a href="index.html">首頁</a><a href="deck.html">教學簡報</a><a href="report.html">檢查紀錄</a></div></header><main class="paper"><h1>解謎教學 LLM Wiki</h1><p class="lead">5 篇來源，串起概念、案例與教學。</p><label for="search">搜尋 Wiki（關鍵字篩選整篇條目）</label><input id="search" type="search" placeholder="例如：回饋、Riven、S4"><p id="search-count" role="status"></p><div class="menu"><a href="#wiki-index">索引</a><a href="#wiki-concepts-attention">概念</a><a href="#wiki-sources-S1">來源</a><a href="#process-traceability">逐頁對應</a><a href="#process-workflow">流程</a></div><article id="process-report" data-search="report"><h2>執行結果與反思</h2>
+<p>執行日期：2026-11-23。此報告依本次工具輸出與檔案整理，沒有模擬真人測試或編造獨立審查。</p>
+<h3>已完成成果</h3>
+<ul>
+<li>5 篇不同來源已 ingest：書目、原文定位、短摘錄、繁中摘要、可支持說法與限制。</li>
+<li>Wiki：4 個概念頁、3 個真實案例頁、1 個自製示例，另附索引與更新紀錄。</li>
+<li>15 頁離線 HTML 簡報，含一個可試驗與重設的小謎題及一題理解測驗。</li>
+<li>逐頁引用表、Graph、執行規則、可重跑程式檢查。</li>
+</ul>
+<h3>資料取得紀錄</h3>
+<table>
+<tr><td>編號</td><td>實際結果</td><td>處理</td></tr>
+<tr><td>R01</td><td>NYU 的 Jonathan Blow 訪談頁開啟後只有導覽與頁尾，無可用正文</td><td>不納入 5 篇；改用可讀的訪談來源 S1</td></tr>
+<tr><td>R02</td><td>Portal 雜誌 PDF 的網頁讀取工具回報檔案過大</td><td>不宣稱讀完；未 ingest，案例改聚焦有證據的遊戲</td></tr>
+<tr><td>R03</td><td>嘗試用本機下載該 PDF，網路名稱解析失敗</td><td>停止本機下載，不計入來源</td></tr>
+<tr><td>R04</td><td>Andersen 論文一個主機回傳 403</td><td>改讀華盛頓大學同一論文鏡像，確認標題、作者及正文後納入 S4</td></tr>
+<tr><td>R05</td><td>S1–S5 的採用段落均可讀，有定位</td><td>寫入 raw/ 與 wiki/sources/</td></tr>
+</table>
+<p>這些是資料取得的障礙，不是原文有錯。raw/ 保留書目與短摘錄，未收錄完整受著作權保護的原文。</p>
+<h3>內容核對紀錄</h3>
+<p>由生成本作業的同一個 AI 對照所讀原文進行，並非獨立審查。</p>
+<table>
+<tr><td>證據</td><td>檢查結果</td><td>文稿處理</td></tr>
+<tr><td>C1／S1</td><td>開發者談理解與「鑰匙」的比喻，非學習效果實驗</td><td>第 4 頁保留「開發者觀點」限制</td></tr>
+<tr><td>C2／S2</td><td>Riven 門下匕首及視角改變有直接描述</td><td>第 5 頁保留固定視角情境</td></tr>
+<tr><td>C3／S3</td><td>官方只描述可操作的規則物件</td><td>第 6 頁把回饋的教學意義標為推論</td></tr>
+<tr><td>C4／S4</td><td>三款遊戲與參與指標，不能外推所有遊戲</td><td>第 7 頁未寫成「教學沒有用」</td></tr>
+<tr><td>C5／S5</td><td>單款遊戲、心流自陳、持續使用意圖有研究限制</td><td>第 7 頁區分意圖、理解與實際留存</td></tr>
+<tr><td>原創示例</td><td>兩筆觀察不能唯一決定規則</td><td>第 9 頁明示可有多種假說，提供進一步試驗</td></tr>
+</table>
+<h3>結構與互動實測</h3>
+<p>第一輪靜態檢查：423 項中 419 項通過，4 項失敗均為 report.html 尚未生成所造成的內部連結。此時是組裝中的成果，並非 4 個不同內容錯誤。補齊報告後重新渲染與檢查，最終結果見 <a href="checks/structural.json">靜態檢查 JSON</a>。保留 <a href="checks/structural-round1.json">第一輪 JSON</a> 供比較。</p>
+<p>19 項互動檢查通過，見 <a href="checks/interactions.json">互動檢查 JSON</a>。使用交付的 deck.js，在 Node VM 搭配最小 DOM fixture 執行，驗證：</p>
+<ul>
+<li>15 頁切換與邊界、鍵盤操作、select 焦點不誤換頁。</li>
+<li>三種符號共九種配對，正確區分開門與關門。</li>
+<li>試驗紀錄、兩階段提示、變形題的錯誤與正確回饋。</li>
+<li>重設清除符號、紀錄、提示與變形題結果。</li>
+<li>理解測驗可重試且有正確回饋。</li>
+</ul>
+<p>此為程式邏輯與模擬 DOM 檢查，不是完整瀏覽器測試，不會測出實際字型、溢出、讀屏或觸控相容性。</p>
+<h3>瀏覽器驗證限制（未通過驗收）</h3>
+<table>
+<tr><td>嘗試</td><td>實際結果</td></tr>
+<tr><td>Playwright 預設啟動</td><td>缺少已安裝的 Chromium 測試執行檔</td></tr>
+<tr><td>使用本機 Chrome 執行檔</td><td>程序啟動後以 SIGABRT 結束，未載入簡報</td></tr>
+<tr><td>內嵌瀏覽器開啟 file URL</td><td>工具的瀏覽器安全政策封鎖本機檔案網址</td></tr>
+</table>
+<p>未繞過政策改走其他網址或瀏覽器。沒有產生或偽稱有瀏覽器截圖。因此桌機／手機版面與真實瀏覽器相容性仍需使用者確認，不能標為已通過。CSS 已提供窄螢幕重排，但這不等同視覺驗證。</p>
+<h3>反思：哪個節點最常出錯？</h3>
+<p>本次單次執行中，資料取得節點記錄了 4 次障礙（R01–R04），瀏覽器驗證另有 3 次環境限制。以這份紀錄計，資料取得最常遇到問題；這是本次觀察，樣本不足以當成長期錯誤率。4 個斷連結則同屬報告未生成這一個根因，不重複算成四種錯誤。</p>
+<h3>把檢查往前移到哪裡？</h3>
+<p>把「正文是否真的可讀、能否定位支持段落」移到 ingest 前。搜尋結果有標題或摘要，不代表能完成來源整理。也在證據卡階段就記錄研究對象、指標與限制，減少逐頁稿將設計觀點誤寫成普遍成效的風險。</p>
+<h3>是否修改 workflow？為什麼？</h3>
+<p>有。原始順序是取得資料、ingest、文稿時查引用。調整後先設正文與定位關卡，失敗只重試來源取得，再進 Wiki。依結構檢查發現的缺報告連結，也在打包關卡加入「所有導向頁先生成，再檢查內部連結」。這樣可把修正留在附近，不必重新生成整份簡報。</p>
+<p>下一次還應把瀏覽器可用性檢查放在製作初期：先確認能否實際預覽再安排視覺驗收，避免直到最後才發現驗證工具不可用。</p>
+<h3>仍待真人確認</h3>
+<p>解壓縮後開啟 index.html，確認文字不重疊、互動可點擊，並在手機寬度閱讀第 9 頁。請一位同學先說出預測再操作，觀察是否能解釋新符號的題目。這部分尚未執行，不能宣稱教學效果已獲驗證。</p></article><article id="process-requirements" data-search="requirements"><h2>討論與確認紀錄</h2>
+<p>2026-11-23，使用者經逐項討論後回覆「確認，開始製作」。</p>
+<ul>
+<li>主題：不直接給答案：解謎遊戲如何讓玩家自己學會規則？</li>
+<li>讀者：玩過遊戲、沒學過遊戲設計的同學。</li>
+<li>案例：真實遊戲加自製互動小謎題。</li>
+<li>篇幅：約 10 分鐘、12–15 頁。</li>
+<li>資料：中英文皆可，成果繁體中文；至少 5 篇。</li>
+<li>交付：離線 HTML、完整 Wiki、ZIP。</li>
+<li>驗收：來源對應、功能、版面、真實執行紀錄與反思。</li>
+</ul>
+<p>此紀錄整理自本次對話，非虛構訪談。學校、學號、系級、姓名未提供，繳交標題由使用者填寫。</p></article><article id="process-traceability" data-search="traceability"><h2>簡報與 Wiki 對應</h2>
+<table>
+<tr><td>頁</td><td>主題</td><td>Wiki／流程依據</td></tr>
+<tr><td>1</td><td>不直接給答案</td><td><a href="wiki.html#wiki-index">wiki/index.md</a></td></tr>
+<tr><td>2</td><td>你是怎麼學會的？</td><td><a href="wiki.html#wiki-concepts-knowledge">wiki/concepts/knowledge.md</a></td></tr>
+<tr><td>3</td><td>玩家腦中的學習迴圈</td><td><a href="wiki.html#wiki-concepts-knowledge">wiki/concepts/knowledge.md</a>、<a href="wiki.html#wiki-concepts-feedback">wiki/concepts/feedback.md</a></td></tr>
+<tr><td>4</td><td>The Witness</td><td><a href="wiki.html#wiki-cases-witness">wiki/cases/witness.md</a>、<a href="wiki.html#wiki-sources-S1">wiki/sources/S1.md</a></td></tr>
+<tr><td>5</td><td>Riven</td><td><a href="wiki.html#wiki-cases-riven">wiki/cases/riven.md</a>、<a href="wiki.html#wiki-sources-S2">wiki/sources/S2.md</a></td></tr>
+<tr><td>6</td><td>Baba Is You</td><td><a href="wiki.html#wiki-cases-baba">wiki/cases/baba.md</a>、<a href="wiki.html#wiki-sources-S3">wiki/sources/S3.md</a></td></tr>
+<tr><td>7</td><td>提示並不是失敗</td><td><a href="wiki.html#wiki-concepts-support">wiki/concepts/support.md</a>、<a href="wiki.html#wiki-sources-S4">wiki/sources/S4.md</a>、<a href="wiki.html#wiki-sources-S5">wiki/sources/S5.md</a></td></tr>
+<tr><td>8</td><td>現在，換你推理</td><td><a href="wiki.html#wiki-examples-signal-lab">wiki/examples/signal-lab.md</a></td></tr>
+<tr><td>9</td><td>訊號門實驗室</td><td><a href="wiki.html#wiki-examples-signal-lab">wiki/examples/signal-lab.md</a></td></tr>
+<tr><td>10</td><td>剛才哪些設計在教你？</td><td><a href="wiki.html#wiki-examples-signal-lab">wiki/examples/signal-lab.md</a>、<a href="wiki.html#wiki-concepts-feedback">wiki/concepts/feedback.md</a></td></tr>
+<tr><td>11</td><td>難題，還是資訊不足？</td><td><a href="wiki.html#wiki-concepts-attention">wiki/concepts/attention.md</a>、<a href="wiki.html#wiki-concepts-feedback">wiki/concepts/feedback.md</a>、<a href="wiki.html#wiki-examples-signal-lab">wiki/examples/signal-lab.md</a></td></tr>
+<tr><td>12</td><td>小測驗：你會先改什麼？</td><td><a href="wiki.html#wiki-concepts-feedback">wiki/concepts/feedback.md</a>、<a href="wiki.html#wiki-examples-signal-lab">wiki/examples/signal-lab.md</a></td></tr>
+<tr><td>13</td><td>從來源到這份簡報</td><td><a href="wiki.html#process-workflow">process/workflow.md</a>、<a href="wiki.html#wiki-index">wiki/index.md</a></td></tr>
+<tr><td>14</td><td>你可以如何驗證教學？</td><td><a href="wiki.html#wiki-concepts-knowledge">wiki/concepts/knowledge.md</a>、<a href="wiki.html#wiki-sources-S2">wiki/sources/S2.md</a>、<a href="wiki.html#process-workflow">process/workflow.md</a></td></tr>
+<tr><td>15</td><td>讓玩家有理由繼續推理</td><td><a href="wiki.html#wiki-index">wiki/index.md</a>、<a href="wiki.html#wiki-concepts-support">wiki/concepts/support.md</a></td></tr>
+</table></article><article id="process-workflow" data-search="workflow"><h2>Graph 與局部 Loop</h2>
+<p>本次是由 AI 依明確關卡執行的檔案式 workflow prototype，不是已部署的自動排程服務。</p>
+<pre>flowchart TD
+ A[需求討論與確認] --&gt; B[取得來源]
+ B --&gt; C{正文可讀且可定位?}
+ C -- 否 --&gt; B
+ C -- 是 --&gt; D[Ingest 來源卡與 Wiki]
+ D --&gt; E{至少5篇且涵蓋教學問題?}
+ E -- 否 --&gt; B
+ E -- 是 --&gt; F[查詢Wiki與逐頁稿]
+ F --&gt; G{忠實度與引用檢查}
+ G -- 來源卡錯 --&gt; D
+ G -- 文稿錯 --&gt; F
+ G -- 通過 --&gt; H[渲染HTML]
+ H --&gt; I{功能與版面檢查}
+ I -- 程式或樣式錯 --&gt; H
+ I -- 內容太多 --&gt; F
+ I -- 通過 --&gt; J[報告與打包]</pre>
+<table>
+<tr><td>節點</td><td>輸入</td><td>輸出</td><td>檢查與退回</td></tr>
+<tr><td>取得來源</td><td>教學問題</td><td>raw/manifest.json、來源卡</td><td>不以搜尋標題代替正文；失敗換同文鏡像或來源</td></tr>
+<tr><td>Ingest</td><td>原文定位</td><td>wiki/sources、concepts、cases</td><td>區分事實、推論、原創；有缺漏回來源</td></tr>
+<tr><td>查詢與文稿</td><td>Wiki</td><td>process/slides.json、對應表</td><td>每頁引用存在，研究保留限制；不通過只改對應頁</td></tr>
+<tr><td>渲染</td><td>逐頁稿</td><td>deck.html</td><td>不增加來源外的事實</td></tr>
+<tr><td>驗證</td><td>成品與來源</td><td>checks/、執行報告</td><td>測九種配對、重設、換頁、內部連結與版面</td></tr>
+<tr><td>打包</td><td>通過的檔案</td><td>ZIP</td><td>排除暫存與未公開全文</td></tr>
+</table>
+<h3>Loop 規格</h3>
+<p>觸發：需求確認，或一個節點收到檢查失敗。</p>
+<p>目標：可離線使用且有來源對應的 15 頁教學簡報。</p>
+<p>限制：不捏造來源或玩家測試；最多修 3 輪；沒有證據不硬補。</p>
+<p>完成：來源、文稿與功能驗收通過，或將未解決項明確標出。</p>
+<p>停止：資料不足且無替代、三輪仍未通過，交代阻塞而不宣稱完成。</p>
+<h3>檢查前移</h3>
+<p>初始構想是取得資料後直接 ingest，再於文稿時查引用。實際遇到空正文與 PDF 讀取錯誤後，在 ingest 前增加「正文可讀＋原文定位」關卡。研究摘要也先記錄指標與限制，防止到排版後才發現過度推論。</p>
+<h3>審查界線</h3>
+<p>本次內容審查由同一個 AI 對照原文進行，沒有另外開啟獨立審查對話。自動測試只能驗證結構與功能，不能證明教學效果。交件前使用者仍應試玩與閱讀來源。</p></article><article id="raw-S1" data-search="S1"><h2>S1 來源擷取卡</h2>
+<p>標題：Feature: Jonathan Blow On Designing The Witness</p>
+<p>作者：Christian Nutt；受訪者 Jonathan Blow</p>
+<p>發表：2011-08-08</p>
+<p>取得日期：2026-11-23</p>
+<p>URL：https://www.gamedeveloper.com/design/feature-jonathan-blow-on-designing-i-the-witness-i-</p>
+<p>定位：正文第 1–4 段，Blow 談玩家當下想法與 key/door 比喻</p>
+<p>短摘錄（英文原文）：</p>
+<blockquote>the key is just in your head</blockquote>
+<p>取得方式：網頁搜尋與正文開啟核對；非全文鏡像。保留少量摘錄與書目供追溯，閱讀全文需連網。</p></article><article id="raw-S2" data-search="S2"><h2>S2 來源擷取卡</h2>
+<p>標題：The Witness’ Jonathan Blow talks game design with Myst co-creator Rand Miller</p>
+<p>作者：Rand Miller、Jonathan Blow／PlayStation Blog</p>
+<p>發表：2017-08-24</p>
+<p>取得日期：2026-11-23</p>
+<p>URL：https://blog.playstation.com/archive/2017/08/24/the-witness-jonathan-blow-talks-game-design-with-myst-co-creator-rand-miller</p>
+<p>定位：Rand Miller 回答 realtime 3D 問題的 Riven gate 段；回答 early testing 段</p>
+<p>短摘錄（英文原文）：</p>
+<blockquote>We placed a dagger in the ground under the gate</blockquote>
+<p>取得方式：網頁搜尋與正文開啟核對；非全文鏡像。保留少量摘錄與書目供追溯，閱讀全文需連網。</p></article><article id="raw-S3" data-search="S3"><h2>S3 來源擷取卡</h2>
+<p>標題：Baba Is You — official website</p>
+<p>作者：Arvi “Hempuli” Teikari</p>
+<p>發表：頁面未標日期</p>
+<p>取得日期：2026-11-23</p>
+<p>URL：https://hempuli.com/baba/</p>
+<p>定位：首頁介紹第一段</p>
+<p>短摘錄（英文原文）：</p>
+<blockquote>the rules you have to follow are present as physical objects in the game world</blockquote>
+<p>取得方式：網頁搜尋與正文開啟核對；非全文鏡像。保留少量摘錄與書目供追溯，閱讀全文需連網。</p></article><article id="raw-S4" data-search="S4"><h2>S4 來源擷取卡</h2>
+<p>標題：The Impact of Tutorials on Games of Varying Complexity</p>
+<p>作者：Erik Andersen 等 8 位作者</p>
+<p>發表：2012</p>
+<p>取得日期：2026-11-23</p>
+<p>URL：https://grail.cs.washington.edu/wp-content/uploads/2015/08/andersen2012tio.pdf</p>
+<p>定位：PDF 第 1 頁（論文頁 59）Abstract／Introduction；第 2 頁 Context-sensitivity</p>
+<p>短摘錄（英文原文）：</p>
+<blockquote>the usefulness of tutorials depends greatly on game complexity</blockquote>
+<p>取得方式：網頁搜尋與正文開啟核對；非全文鏡像。保留少量摘錄與書目供追溯，閱讀全文需連網。</p></article><article id="raw-S5" data-search="S5"><h2>S5 來源擷取卡</h2>
+<p>標題：Demystifying the First-Time Experience of Mobile Games</p>
+<p>作者：Mario Passalacqua、Raphaël Morin、Sylvain Sénécal、Lennart E. Nacke、Pierre-Majorique Léger</p>
+<p>發表：2020-07-11</p>
+<p>取得日期：2026-11-23</p>
+<p>URL：https://www.mdpi.com/2414-4088/4/3/41</p>
+<p>定位：Abstract；§4.2、§4.4；§5 Discussion 最後的限制段</p>
+<p>短摘錄（英文原文）：</p>
+<blockquote>a single game which limits the generalizability of our results</blockquote>
+<p>取得方式：網頁搜尋與正文開啟核對；非全文鏡像。保留少量摘錄與書目供追溯，閱讀全文需連網。</p></article><article id="wiki-cases-baba" data-search="baba"><h2>Baba Is You：可操作的規則</h2>
+<p>規則可以成為被操作的對象。教學分析著重「改變後查看結果」；本簡報沒有重製遊戲，也未測量其教學成效。</p>
+<p><a href="wiki.html#wiki-sources-S3">來源與限制</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-cases-riven" data-search="riven"><h2>Riven：門下的線索</h2>
+<p>先被門吸引的玩家，可能忽略下方空間。案例中的匕首與視角變化，讓通路成為可被注意的可能性。此處只討論訪談描述的片段。</p>
+<p><a href="wiki.html#wiki-sources-S2">來源與限制</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-cases-witness" data-search="witness"><h2>The Witness：理解作為鑰匙</h2>
+<p>以開發者對知識的比喻介紹「理解規則」的價值。本作業不重現特定原作關卡，也不將自製謎題冒充其設計。</p>
+<p><a href="wiki.html#wiki-sources-S1">來源與限制</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-concepts-attention" data-search="attention"><h2>讓線索能被注意</h2>
+<p>Riven 的案例提供注意力引導的具體材料。教學應用：將關鍵線索放在玩家會觀察的區域，避免把看不見的資訊當成推理難度。這是案例啟發的設計建議。</p>
+<h3>本作業的應用（推論）</h3>
+<p>小謎題先顯示兩筆可比較的觀察，讓讀者有推論起點。</p>
+<h3>證據</h3>
+<p><a href="wiki.html#wiki-sources-S2">S2</a></p>
+<h3>相關概念</h3>
+<p><a href="wiki.html#wiki-concepts-knowledge">理解就是進展</a> · <a href="wiki.html#wiki-concepts-attention">注意力</a> · <a href="wiki.html#wiki-concepts-feedback">操作回饋</a> · <a href="wiki.html#wiki-concepts-support">提示與限制</a></p>
+<p><a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-concepts-feedback" data-search="feedback"><h2>讓操作結果可比較</h2>
+<p>Baba Is You 的可操作規則是觀察「改動與結果」的案例。由此提出的教學建議：練習時保留前後狀態，讓玩家知道剛剛改變了什麼。此建議未在本作業中經玩家研究驗證。</p>
+<h3>本作業的應用（推論）</h3>
+<p>本例提供實驗紀錄與重設，錯誤不扣分；先預測再試驗。</p>
+<h3>證據</h3>
+<p><a href="wiki.html#wiki-sources-S3">S3</a></p>
+<h3>相關概念</h3>
+<p><a href="wiki.html#wiki-concepts-knowledge">理解就是進展</a> · <a href="wiki.html#wiki-concepts-attention">注意力</a> · <a href="wiki.html#wiki-concepts-feedback">操作回饋</a> · <a href="wiki.html#wiki-concepts-support">提示與限制</a></p>
+<p><a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-concepts-knowledge" data-search="knowledge"><h2>理解就是進展</h2>
+<p>玩家學到一種關係，才有機會用在下一題。這裡把「學會」操作化為：能說明自己的預測，並在變形題中運用。這是本作業的教學定義，不是來源提供的量表。</p>
+<h3>本作業的應用（推論）</h3>
+<p>先讓玩家說「我預期會發生什麼」，比只記錄是否通關更能暴露猜測。</p>
+<h3>證據</h3>
+<p><a href="wiki.html#wiki-sources-S1">S1</a></p>
+<h3>相關概念</h3>
+<p><a href="wiki.html#wiki-concepts-knowledge">理解就是進展</a> · <a href="wiki.html#wiki-concepts-attention">注意力</a> · <a href="wiki.html#wiki-concepts-feedback">操作回饋</a> · <a href="wiki.html#wiki-concepts-support">提示與限制</a></p>
+<p><a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-concepts-support" data-search="support"><h2>提示與適用條件</h2>
+<p>兩項研究使用不同遊戲與衡量方式，不能直接當成互相推翻。S4 關注遊戲複雜度與參與，S5 強調經驗與自陳心流。設計時應同時考慮讀者背景、遊戲與目標指標。</p>
+<h3>本作業的應用（推論）</h3>
+<p>提供可選的漸進提示。它是本作業的設計選擇，不能宣稱已證明能提升學習。</p>
+<h3>證據</h3>
+<p><a href="wiki.html#wiki-sources-S4">S4</a>、<a href="wiki.html#wiki-sources-S5">S5</a></p>
+<h3>相關概念</h3>
+<p><a href="wiki.html#wiki-concepts-knowledge">理解就是進展</a> · <a href="wiki.html#wiki-concepts-attention">注意力</a> · <a href="wiki.html#wiki-concepts-feedback">操作回饋</a> · <a href="wiki.html#wiki-concepts-support">提示與限制</a></p>
+<p><a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-examples-signal-lab" data-search="signal-lab"><h2>自製教學示例：訊號門實驗室</h2>
+<p>這是本作業原創的簡化模型，非任何商業遊戲的關卡。</p>
+<h3>玩家任務</h3>
+<p>觀察符號配對與門的開關。自由選擇兩個符號並測試，提出規則，再完成一題變形題。</p>
+<h3>示範與規則（含解答）</h3>
+<p>初始觀察：○○ 開門；○△ 關門。實作規則：兩個符號相同即開門，否則關門。</p>
+<p>兩筆觀察仍可能符合「只接受圓形」等其他假說，因此鼓勵測試 △△。介面不宣稱有限觀察能唯一證明規則。最後變形題改用菱形與方形，檢驗讀者能否將相同性關係遷移。</p>
+<h3>設計理由</h3>
+<p>先有可比較的觀察，再讓玩家主動測試。保留紀錄且不扣分。提示依序提醒比較相同／不同，再提供規則。以上為設計選擇，未經真人學習成效測試。</p>
+<h3>檢查</h3>
+<p>三種符號的九種配對都需符合規則。重設需同時清除紀錄、提示與變形題結果。不能只有成功路徑可操作。</p>
+<p><a href="wiki.html#wiki-concepts-attention">注意力</a> · <a href="wiki.html#wiki-concepts-feedback">回饋</a> · <a href="wiki.html#wiki-concepts-support">提示</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-index" data-search="index"><h2>解謎遊戲如何教會玩家操作？</h2>
+<p>為玩過遊戲、未學過設計的同學建立的 LLM Wiki。以來源卡、概念頁與案例頁交叉連結，支援引用查詢與教學產出。這是檔案式知識庫，不包含向量資料庫或在線聊天模型。</p>
+<h3>閱讀路線</h3>
+<ul>
+<li><a href="wiki.html#wiki-concepts-knowledge">理解就是進展</a></li>
+<li><a href="wiki.html#wiki-concepts-attention">讓線索能被注意</a></li>
+<li><a href="wiki.html#wiki-concepts-feedback">讓操作結果可比較</a></li>
+<li><a href="wiki.html#wiki-concepts-support">提示與適用條件</a></li>
+<li><a href="wiki.html#wiki-examples-signal-lab">自製訊號門</a></li>
+</ul>
+<h3>真實案例</h3>
+<p><a href="wiki.html#wiki-cases-witness">The Witness</a> · <a href="wiki.html#wiki-cases-riven">Riven</a> · <a href="wiki.html#wiki-cases-baba">Baba Is You</a></p>
+<h3>已 ingest 的 5 篇資料</h3>
+<ul>
+<li><a href="wiki.html#wiki-sources-S1">S1：Feature: Jonathan Blow On Designing The Witness</a></li>
+<li><a href="wiki.html#wiki-sources-S2">S2：The Witness’ Jonathan Blow talks game design with Myst co-creator Rand Miller</a></li>
+<li><a href="wiki.html#wiki-sources-S3">S3：Baba Is You — official website</a></li>
+<li><a href="wiki.html#wiki-sources-S4">S4：The Impact of Tutorials on Games of Varying Complexity</a></li>
+<li><a href="wiki.html#wiki-sources-S5">S5：Demystifying the First-Time Experience of Mobile Games</a></li>
+</ul>
+<h3>使用方式</h3>
+<p>先查概念頁，再沿來源卡回到原文定位。撰寫簡報時只使用 Wiki 的內容；原創設計也先記入示例頁。新增資料依 AGENTS.md 更新索引、概念與紀錄。</p>
+<p><a href="wiki.html#wiki-log">更新紀錄</a> · <a href="wiki.html#process-requirements">需求</a> · <a href="wiki.html#process-workflow">流程</a></p></article><article id="wiki-log" data-search="log"><h2>更新紀錄</h2>
+<h3>2026-11-23</h3>
+<ul>
+<li>根據逐項訪談確定主題、讀者、案例、時長、語言與離線交付。</li>
+<li>搜尋並核對來源；拒絕僅能取得導覽列的 NYU 頁面作為證據。</li>
+<li>Portal 雜誌 PDF 因工具大小限制未納入，改聚焦已有正文證據的案例。</li>
+<li>Andersen 論文一個主機回傳 403，改讀華盛頓大學同篇論文鏡像。</li>
+<li>Ingest S1–S5，建立 5 篇來源摘要、4 個概念頁、3 個案例頁與 1 個原創示例。</li>
+<li>將研究的衡量指標與限制提前寫入證據卡，再生成 15 頁稿。</li>
+<li>產出 HTML 與檢查腳本，檢查結果見成果首頁。</li>
+</ul></article><article id="wiki-sources-S1" data-search="S1"><h2>S1｜Feature: Jonathan Blow On Designing The Witness</h2>
+<p>來源類型：開發者訪談／官方介紹</p>
+<h3>摘要</h3>
+<p>Blow 將解謎所需的「鑰匙」比喻為玩家腦中的理解，並描述從玩家當下想法出發的設計方式。</p>
+<h3>證據卡 C1</h3>
+<p>可支持：Blow 將解謎所需的「鑰匙」比喻為玩家腦中的理解，並描述從玩家當下想法出發的設計方式。</p>
+<p>不能推論：這是開發者自述，且發表於上市前，不能據此斷言所有玩家都能自行學會。</p>
+<h3>來源定位</h3>
+<p>Christian Nutt；受訪者 Jonathan Blow，2011-08-08。</p>
+<p><a href="https://www.gamedeveloper.com/design/feature-jonathan-blow-on-designing-i-the-witness-i-">Feature: Jonathan Blow On Designing The Witness</a></p>
+<p>正文第 1–4 段，Blow 談玩家當下想法與 key/door 比喻</p>
+<p><a href="wiki.html#raw-S1">原始擷取卡</a> · <a href="wiki.html#wiki-concepts-knowledge">概念頁</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-sources-S2" data-search="S2"><h2>S2｜The Witness’ Jonathan Blow talks game design with Myst co-creator Rand Miller</h2>
+<p>來源類型：開發者訪談／官方介紹</p>
+<h3>摘要</h3>
+<p>Miller 說明 Riven 以門下匕首吸引注意，點擊後切換較低視角，暗示可從門下通過。他也描述提早觀察玩家操作以修正摩擦。</p>
+<h3>證據卡 C2</h3>
+<p>可支持：Miller 說明 Riven 以門下匕首吸引注意，點擊後切換較低視角，暗示可從門下通過。他也描述提早觀察玩家操作以修正摩擦。</p>
+<p>不能推論：案例屬固定視角場景；訪談亦討論即時 3D 需要不同引導。不是所有場景都適用同一手法。</p>
+<h3>來源定位</h3>
+<p>Rand Miller、Jonathan Blow／PlayStation Blog，2017-08-24。</p>
+<p><a href="https://blog.playstation.com/archive/2017/08/24/the-witness-jonathan-blow-talks-game-design-with-myst-co-creator-rand-miller">The Witness’ Jonathan Blow talks game design with Myst co-creator Rand Miller</a></p>
+<p>Rand Miller 回答 realtime 3D 問題的 Riven gate 段；回答 early testing 段</p>
+<p><a href="wiki.html#raw-S2">原始擷取卡</a> · <a href="wiki.html#wiki-concepts-attention">概念頁</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-sources-S3" data-search="S3"><h2>S3｜Baba Is You — official website</h2>
+<p>來源類型：開發者訪談／官方介紹</p>
+<h3>摘要</h3>
+<p>官方介紹指出，規則以遊戲世界中的物件存在；操弄規則會改變遊戲如何運作。</p>
+<h3>證據卡 C3</h3>
+<p>可支持：官方介紹指出，規則以遊戲世界中的物件存在；操弄規則會改變遊戲如何運作。</p>
+<p>不能推論：此頁只支持機制描述，沒有測量學習效果，也沒有證明所有玩家都能無提示通關。</p>
+<h3>來源定位</h3>
+<p>Arvi “Hempuli” Teikari，頁面未標日期。</p>
+<p><a href="https://hempuli.com/baba/">Baba Is You — official website</a></p>
+<p>首頁介紹第一段</p>
+<p><a href="wiki.html#raw-S3">原始擷取卡</a> · <a href="wiki.html#wiki-concepts-feedback">概念頁</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-sources-S4" data-search="S4"><h2>S4｜The Impact of Tutorials on Games of Varying Complexity</h2>
+<p>來源類型：研究論文</p>
+<h3>摘要</h3>
+<p>研究比較三款遊戲的教學設計。教學對參與表現的影響因遊戲而異，不能把兩款較簡單遊戲的結果推廣成「教學沒有用」。</p>
+<h3>證據卡 C4</h3>
+<p>可支持：研究比較三款遊戲的教學設計。教學對參與表現的影響因遊戲而異，不能把兩款較簡單遊戲的結果推廣成「教學沒有用」。</p>
+<p>不能推論：遊玩時間與進度等參與指標不等於直接測量理解。研究遊戲與我們的自製謎題不同。</p>
+<h3>來源定位</h3>
+<p>Erik Andersen 等 8 位作者，2012。</p>
+<p><a href="https://grail.cs.washington.edu/wp-content/uploads/2015/08/andersen2012tio.pdf">The Impact of Tutorials on Games of Varying Complexity</a></p>
+<p>PDF 第 1 頁（論文頁 59）Abstract／Introduction；第 2 頁 Context-sensitivity</p>
+<p><a href="wiki.html#raw-S4">原始擷取卡</a> · <a href="wiki.html#wiki-concepts-support">概念頁</a> · <a href="wiki.html#wiki-index">索引</a></p></article><article id="wiki-sources-S5" data-search="S5"><h2>S5｜Demystifying the First-Time Experience of Mobile Games</h2>
+<p>來源類型：研究論文</p>
+<h3>摘要</h3>
+<p>40 人的單款手機遊戲實驗發現，教學有助非專家玩家的自陳心流感受。研究另分析持續使用意圖，不能將其直接當成實際留存。</p>
+<h3>證據卡 C5</h3>
+<p>可支持：40 人的單款手機遊戲實驗發現，教學有助非專家玩家的自陳心流感受。研究另分析持續使用意圖，不能將其直接當成實際留存。</p>
+<p>不能推論：單一遊戲與自陳測量限制推廣。這不是針對所有解謎遊戲的證明。</p>
+<h3>來源定位</h3>
+<p>Mario Passalacqua、Raphaël Morin、Sylvain Sénécal、Lennart E. Nacke、Pierre-Majorique Léger，2020-07-11。</p>
+<p><a href="https://www.mdpi.com/2414-4088/4/3/41">Demystifying the First-Time Experience of Mobile Games</a></p>
+<p>Abstract；§4.2、§4.4；§5 Discussion 最後的限制段</p>
+<p><a href="wiki.html#raw-S5">原始擷取卡</a> · <a href="wiki.html#wiki-concepts-support">概念頁</a> · <a href="wiki.html#wiki-index">索引</a></p></article></main><script>const a=[...document.querySelectorAll('article')],s=document.querySelector('#search');s.oninput=()=>{let n=0;for(const x of a){const yes=x.textContent.toLowerCase().includes(s.value.toLowerCase());x.hidden=!yes;if(yes)n++}document.querySelector('#search-count').textContent=`顯示 ${n} 篇條目`};window.addEventListener('hashchange',()=>{if(s.value){s.value='';s.oninput()}document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView()});</script></body></html>

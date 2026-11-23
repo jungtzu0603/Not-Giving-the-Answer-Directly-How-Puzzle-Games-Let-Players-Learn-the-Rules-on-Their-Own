@@ -1,0 +1,2145 @@
+{
+  "timestamp": "2026-11-23T03:30:45.558488+00:00",
+  "scope": "Static structure only; not browser rendering or source truth verification",
+  "passed": 419,
+  "total": 423,
+  "failures": [
+    {
+      "name": "wiki.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    }
+  ],
+  "checks": [
+    {
+      "name": "wiki.html unique IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → index.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html → deck.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html → #wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor #wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → #wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor #wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → #wiki-sources-S1",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor #wiki-sources-S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → #process-traceability",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor #process-traceability",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → #process-workflow",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor #process-workflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-cases-witness",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-cases-witness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-cases-riven",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-cases-riven",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-cases-baba",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-cases-baba",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#process-workflow",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#process-workflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#process-workflow",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#process-workflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-cases-witness",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-cases-witness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-cases-riven",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-cases-riven",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-cases-baba",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-cases-baba",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-log",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#process-requirements",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#process-requirements",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#process-workflow",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#process-workflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#raw-S1",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#raw-S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#raw-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#raw-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#raw-S3",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#raw-S3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#raw-S4",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#raw-S4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#raw-S5",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#raw-S5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki.html → style.css",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "wiki.html offline assets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html unique IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html → index.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → deck.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → deck.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → wiki.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → wiki.html#process-workflow",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html anchor wiki.html#process-workflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html → style.css",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "index.html offline assets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html unique IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → index.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html → wiki.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-cases-witness",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-cases-witness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-sources-S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-cases-riven",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-cases-riven",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-cases-baba",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-cases-baba",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-sources-S3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-sources-S4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-sources-S5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-attention",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-examples-signal-lab",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#process-workflow",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#process-workflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-knowledge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-sources-S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#process-workflow",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#process-workflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html → report.html",
+      "passed": false,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-index",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-index",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html anchor wiki.html#wiki-concepts-support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "deck.html → style.css",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html → deck.js",
+      "passed": true,
+      "detail": "local target"
+    },
+    {
+      "name": "deck.html offline assets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "at least 5 unique sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1 source pipeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1 evidence metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2 source pipeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2 evidence metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3 source pipeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3 evidence metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S4 source pipeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S4 evidence metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S5 source pipeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S5 evidence metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "12–15 slides",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "15 rendered sections",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 1 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 1 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 2 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 2 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 3 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 3 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 4 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 4 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 5 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 5 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 6 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 6 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 7 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 7 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 8 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 8 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 9 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 9 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 10 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 10 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 11 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 11 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 12 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 12 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 13 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 13 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 14 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 14 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 15 references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "slide 15 title preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all 5 sources used in deck",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → concepts/knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → concepts/attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → concepts/feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → concepts/support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → examples/signal-lab.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → cases/witness.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → cases/riven.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → cases/baba.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → sources/S1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → sources/S2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → sources/S3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → sources/S4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → sources/S5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → log.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → ../process/requirements.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/index.md → ../process/workflow.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/cases/riven.md → ../sources/S2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/cases/riven.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/cases/baba.md → ../sources/S3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/cases/baba.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/cases/witness.md → ../sources/S1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/cases/witness.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/examples/signal-lab.md → ../concepts/attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/examples/signal-lab.md → ../concepts/feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/examples/signal-lab.md → ../concepts/support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/examples/signal-lab.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/knowledge.md → ../sources/S1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/knowledge.md → knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/knowledge.md → attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/knowledge.md → feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/knowledge.md → support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/knowledge.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/support.md → ../sources/S4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/support.md → ../sources/S5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/support.md → knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/support.md → attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/support.md → feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/support.md → support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/support.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/attention.md → ../sources/S2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/attention.md → knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/attention.md → attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/attention.md → feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/attention.md → support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/attention.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/feedback.md → ../sources/S3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/feedback.md → knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/feedback.md → attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/feedback.md → feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/feedback.md → support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/concepts/feedback.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S2.md → ../../raw/S2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S2.md → ../concepts/attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S2.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S3.md → ../../raw/S3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S3.md → ../concepts/feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S3.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S4.md → ../../raw/S4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S4.md → ../concepts/support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S4.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S1.md → ../../raw/S1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S1.md → ../concepts/knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S1.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S5.md → ../../raw/S5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S5.md → ../concepts/support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wiki/sources/S5.md → ../index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/cases/witness.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/sources/S1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/cases/riven.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/sources/S2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/cases/baba.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/sources/S3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/sources/S4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/sources/S5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/examples/signal-lab.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/examples/signal-lab.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/examples/signal-lab.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/attention.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/examples/signal-lab.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/feedback.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/examples/signal-lab.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../process/workflow.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/knowledge.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/sources/S2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../process/workflow.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/index.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "process/traceability.md → ../wiki/concepts/support.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no external CSS imports",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

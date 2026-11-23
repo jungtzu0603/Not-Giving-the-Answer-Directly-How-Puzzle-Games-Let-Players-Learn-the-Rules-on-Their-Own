@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-11-23T03:33:16.318Z",
+  "scope": "Delivered JavaScript executed in Node VM with a minimal DOM. Does not verify browser compatibility, layout, accessibility tree or visual appearance.",
+  "passed": 19,
+  "total": 19,
+  "results": [
+    {
+      "name": "initial slide and previous boundary",
+      "passed": true
+    },
+    {
+      "name": "next and previous navigation",
+      "passed": true
+    },
+    {
+      "name": "all 15 slides selectable, exactly one active",
+      "passed": true
+    },
+    {
+      "name": "keyboard navigation and Home/End",
+      "passed": true
+    },
+    {
+      "name": "select-focused arrows do not navigate",
+      "passed": true
+    },
+    {
+      "name": "pair ○○",
+      "passed": true
+    },
+    {
+      "name": "pair ○△",
+      "passed": true
+    },
+    {
+      "name": "pair ○□",
+      "passed": true
+    },
+    {
+      "name": "pair △○",
+      "passed": true
+    },
+    {
+      "name": "pair △△",
+      "passed": true
+    },
+    {
+      "name": "pair △□",
+      "passed": true
+    },
+    {
+      "name": "pair □○",
+      "passed": true
+    },
+    {
+      "name": "pair □△",
+      "passed": true
+    },
+    {
+      "name": "pair □□",
+      "passed": true
+    },
+    {
+      "name": "history preserves all nine experiments",
+      "passed": true
+    },
+    {
+      "name": "hint stages then stop",
+      "passed": true
+    },
+    {
+      "name": "transfer wrong then correct",
+      "passed": true
+    },
+    {
+      "name": "reset clears selections, history, hints and transfer",
+      "passed": true
+    },
+    {
+      "name": "quiz wrong and correct feedback",
+      "passed": true
+    }
+  ]
+}

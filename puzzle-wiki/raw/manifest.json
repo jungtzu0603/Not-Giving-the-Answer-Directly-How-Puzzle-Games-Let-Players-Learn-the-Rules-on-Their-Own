@@ -1,0 +1,72 @@
+[
+  {
+    "id": "S1",
+    "title": "Feature: Jonathan Blow On Designing The Witness",
+    "author": "Christian Nutt；受訪者 Jonathan Blow",
+    "date": "2011-08-08",
+    "url": "https://www.gamedeveloper.com/design/feature-jonathan-blow-on-designing-i-the-witness-i-",
+    "loc": "正文第 1–4 段，Blow 談玩家當下想法與 key/door 比喻",
+    "quote": "the key is just in your head",
+    "summary": "Blow 將解謎所需的「鑰匙」比喻為玩家腦中的理解，並描述從玩家當下想法出發的設計方式。",
+    "limit": "這是開發者自述，且發表於上市前，不能據此斷言所有玩家都能自行學會。",
+    "claim": "C1",
+    "concept": "knowledge",
+    "case": "witness"
+  },
+  {
+    "id": "S2",
+    "title": "The Witness’ Jonathan Blow talks game design with Myst co-creator Rand Miller",
+    "author": "Rand Miller、Jonathan Blow／PlayStation Blog",
+    "date": "2017-08-24",
+    "url": "https://blog.playstation.com/archive/2017/08/24/the-witness-jonathan-blow-talks-game-design-with-myst-co-creator-rand-miller",
+    "loc": "Rand Miller 回答 realtime 3D 問題的 Riven gate 段；回答 early testing 段",
+    "quote": "We placed a dagger in the ground under the gate",
+    "summary": "Miller 說明 Riven 以門下匕首吸引注意，點擊後切換較低視角，暗示可從門下通過。他也描述提早觀察玩家操作以修正摩擦。",
+    "limit": "案例屬固定視角場景；訪談亦討論即時 3D 需要不同引導。不是所有場景都適用同一手法。",
+    "claim": "C2",
+    "concept": "attention",
+    "case": "riven"
+  },
+  {
+    "id": "S3",
+    "title": "Baba Is You — official website",
+    "author": "Arvi “Hempuli” Teikari",
+    "date": "頁面未標日期",
+    "url": "https://hempuli.com/baba/",
+    "loc": "首頁介紹第一段",
+    "quote": "the rules you have to follow are present as physical objects in the game world",
+    "summary": "官方介紹指出，規則以遊戲世界中的物件存在；操弄規則會改變遊戲如何運作。",
+    "limit": "此頁只支持機制描述，沒有測量學習效果，也沒有證明所有玩家都能無提示通關。",
+    "claim": "C3",
+    "concept": "feedback",
+    "case": "baba"
+  },
+  {
+    "id": "S4",
+    "title": "The Impact of Tutorials on Games of Varying Complexity",
+    "author": "Erik Andersen 等 8 位作者",
+    "date": "2012",
+    "url": "https://grail.cs.washington.edu/wp-content/uploads/2015/08/andersen2012tio.pdf",
+    "loc": "PDF 第 1 頁（論文頁 59）Abstract／Introduction；第 2 頁 Context-sensitivity",
+    "quote": "the usefulness of tutorials depends greatly on game complexity",
+    "summary": "研究比較三款遊戲的教學設計。教學對參與表現的影響因遊戲而異，不能把兩款較簡單遊戲的結果推廣成「教學沒有用」。",
+    "limit": "遊玩時間與進度等參與指標不等於直接測量理解。研究遊戲與我們的自製謎題不同。",
+    "claim": "C4",
+    "concept": "support",
+    "case": null
+  },
+  {
+    "id": "S5",
+    "title": "Demystifying the First-Time Experience of Mobile Games",
+    "author": "Mario Passalacqua、Raphaël Morin、Sylvain Sénécal、Lennart E. Nacke、Pierre-Majorique Léger",
+    "date": "2020-07-11",
+    "url": "https://www.mdpi.com/2414-4088/4/3/41",
+    "loc": "Abstract；§4.2、§4.4；§5 Discussion 最後的限制段",
+    "quote": "a single game which limits the generalizability of our results",
+    "summary": "40 人的單款手機遊戲實驗發現，教學有助非專家玩家的自陳心流感受。研究另分析持續使用意圖，不能將其直接當成實際留存。",
+    "limit": "單一遊戲與自陳測量限制推廣。這不是針對所有解謎遊戲的證明。",
+    "claim": "C5",
+    "concept": "support",
+    "case": null
+  }
+]

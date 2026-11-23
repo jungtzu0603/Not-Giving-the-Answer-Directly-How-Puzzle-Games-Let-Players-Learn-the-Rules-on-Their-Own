@@ -1,0 +1,181 @@
+[
+  {
+    "page": 1,
+    "title": "不直接給答案",
+    "subtitle": "解謎遊戲如何讓玩家自己學會規則？",
+    "kind": "hero",
+    "body": "先當玩家，再當設計師。<br>一堂約 10 分鐘的互動入門課。",
+    "refs": [
+      "wiki/index.md"
+    ],
+    "note": "30 秒：介紹主題。真實案例僅討論局部設計，不包含完整解法。"
+  },
+  {
+    "page": 2,
+    "title": "你是怎麼學會的？",
+    "subtitle": "按對一次，和理解規則，有什麼不同？",
+    "kind": "question",
+    "body": "<p class=\"big\">「我猜對了」<br><span class=\"accent\">「我能預測下一次」</span></p><p>這堂課的目標：能指出線索、解釋回饋，並判斷何時需要提示。</p>",
+    "refs": [
+      "wiki/concepts/knowledge.md"
+    ],
+    "note": "35 秒：請同學回想一次自己突然理解遊戲規則的時刻。預測是本課的操作性目標，不是研究量表。"
+  },
+  {
+    "page": 3,
+    "title": "玩家腦中的學習迴圈",
+    "subtitle": "我們用這個框架分析案例",
+    "kind": "loop",
+    "body": "<ol class=\"steps\"><li>觀察<br><small>哪些東西值得注意？</small></li><li>假設<br><small>我認為規則是什麼？</small></li><li>試驗<br><small>改一個條件會怎樣？</small></li><li>修正<br><small>結果符合預期嗎？</small></li></ol><p>這是本作業整理的分析框架。能否學會，仍需要觀察真實玩家。</p>",
+    "refs": [
+      "wiki/concepts/knowledge.md",
+      "wiki/concepts/feedback.md"
+    ],
+    "note": "40 秒：以實驗循環解釋。此框架是教學綜合，不是從文獻照抄的定律。"
+  },
+  {
+    "page": 4,
+    "title": "The Witness",
+    "subtitle": "理解可以成為通往下一步的鑰匙",
+    "kind": "case",
+    "body": "<p class=\"big\">線索 → 理解 → 新的可能性</p><p>Blow 用「腦中的鑰匙」描述解謎所需的理解。</p><p class=\"callout\">設計思考：下一題需要玩家帶走哪個想法？</p><p class=\"muted\">開發者觀點，不代表每位玩家都能無提示學會。</p>",
+    "refs": [
+      "wiki/cases/witness.md",
+      "wiki/sources/S1.md"
+    ],
+    "note": "40 秒：解釋知識能改變玩家看到的可能性。不要推論整款遊戲完全沒有引導。"
+  },
+  {
+    "page": 5,
+    "title": "Riven",
+    "subtitle": "先讓玩家看見能思考的線索",
+    "kind": "case",
+    "body": "<div class=\"sequence\"><div><b>門擋住去路</b><p>玩家注意的是「門」。</p></div><div><b>匕首引向下方</b><p>點擊後視角降低。</p></div><div><b>注意到門下空間</b><p>新的行動可能浮現。</p></div></div><p class=\"muted\">依 Miller 訪談整理；固定視角的引導，不可直接套用到所有 3D 場景。</p>",
+    "refs": [
+      "wiki/cases/riven.md",
+      "wiki/sources/S2.md"
+    ],
+    "note": "45 秒：這裡減少的是看不見線索的摩擦，不是直接交出完整答案。"
+  },
+  {
+    "page": 6,
+    "title": "Baba Is You",
+    "subtitle": "規則本身也可以被操作",
+    "kind": "case",
+    "body": "<p class=\"big\">改變規則物件<br><span class=\"accent\">觀察世界如何改變</span></p><p>官方介紹將規則描述為遊戲世界中的實體物件。</p><p class=\"callout\">我們的教學分析：讓玩家比較操作前後，有助提出下一個假設。</p><p class=\"muted\">後一句是設計推論，非官方提供的成效研究。</p>",
+    "refs": [
+      "wiki/cases/baba.md",
+      "wiki/sources/S3.md"
+    ],
+    "note": "40 秒：不用帶入未查證的特定關卡。焦點是規則成為可操作對象。"
+  },
+  {
+    "page": 7,
+    "title": "提示並不是失敗",
+    "subtitle": "教學方式要配合遊戲與玩家",
+    "kind": "research",
+    "body": "<div class=\"twocol\"><div><h3>遊戲情境</h3><p>2012 年研究：教學對參與表現的影響因遊戲而異。</p></div><div><h3>玩家經驗</h3><p>2020 年研究：在單款遊戲中，非專家玩家的自陳心流受益。</p></div></div><p class=\"callout\">不能因此宣稱「沒教學最好」，也不能把感受或意圖當成實際學會或留存。</p>",
+    "refs": [
+      "wiki/concepts/support.md",
+      "wiki/sources/S4.md",
+      "wiki/sources/S5.md"
+    ],
+    "note": "45 秒：兩研究的遊戲與指標不同，沒有直接互相推翻。"
+  },
+  {
+    "page": 8,
+    "title": "現在，換你推理",
+    "subtitle": "訊號門實驗室",
+    "kind": "intro",
+    "body": "<p class=\"big\">兩個符號，決定一扇門。</p><p>下一頁有兩筆觀察。選擇符號、測試，試著找出規則。</p><p>沒有倒數、沒有扣分。卡住時可以開啟提示。</p><p class=\"muted\">自製教學示例，非商業遊戲關卡。規則刻意簡化。</p>",
+    "refs": [
+      "wiki/examples/signal-lab.md"
+    ],
+    "note": "25 秒：先不公布規則，提醒同學每次測試前先預測。"
+  },
+  {
+    "page": 9,
+    "title": "訊號門實驗室",
+    "subtitle": "先預測，再按「測試配對」",
+    "kind": "puzzle",
+    "body": "",
+    "refs": [
+      "wiki/examples/signal-lab.md"
+    ],
+    "note": "90 秒：讓同學自由試驗。初始觀察不唯一決定規則，可追問「還有哪個假說也符合？」再用△△排除只接受圓形的假說。"
+  },
+  {
+    "page": 10,
+    "title": "剛才哪些設計在教你？",
+    "subtitle": "將體驗拆成可檢查的選擇",
+    "kind": "debrief",
+    "body": "<div class=\"twocol\"><div><h3>觀察與回饋</h3><p>兩筆起始紀錄提供比較材料。每次結果立即留下紀錄。</p></div><div><h3>試錯與遷移</h3><p>可重設、無扣分。換符號的題目，檢查你是否只記住外觀。</p></div></div><p class=\"callout\">小謎題只能示範這些設計選擇，尚未證明它能改善學習。</p>",
+    "refs": [
+      "wiki/examples/signal-lab.md",
+      "wiki/concepts/feedback.md"
+    ],
+    "note": "40 秒：請同學用自己的話說出相同性規則。沒有真人研究，不能將測試通過當成教學有效。"
+  },
+  {
+    "page": 11,
+    "title": "難題，還是資訊不足？",
+    "subtitle": "設計師可以先檢查這些問題",
+    "kind": "comparison",
+    "body": "<table><tr><th>可以推理的挑戰</th><th>需要修正的摩擦</th></tr><tr><td>線索可見，但要比較才能理解</td><td>關鍵線索根本沒被注意</td></tr><tr><td>試驗後能修正假設</td><td>做了操作，卻不知道結果</td></tr><tr><td>新題改變情境，保留關係</td><td>規則偷偷改變，沒有新證據</td></tr></table><p class=\"muted\">本作業的設計檢查表，不是所有解謎遊戲的評分定律。</p>",
+    "refs": [
+      "wiki/concepts/attention.md",
+      "wiki/concepts/feedback.md",
+      "wiki/examples/signal-lab.md"
+    ],
+    "note": "40 秒：挑戰與摩擦並非絕對二分，需看遊戲目的與玩家實際表現。"
+  },
+  {
+    "page": 12,
+    "title": "小測驗：你會先改什麼？",
+    "subtitle": "玩家一直亂按，卻說不出自己的假設",
+    "kind": "quiz",
+    "body": "<div class=\"answers\"><button data-answer=\"wrong\">A　把提示全部移除，讓他多試幾次</button><button data-answer=\"right\">B　保留操作結果，請他先預測再測試</button><button data-answer=\"wrong\">C　立即顯示完整答案，然後進下一關</button></div><p id=\"quiz-feedback\" role=\"status\" aria-live=\"polite\">選擇一個答案，看看設計理由。</p>",
+    "refs": [
+      "wiki/concepts/feedback.md",
+      "wiki/examples/signal-lab.md"
+    ],
+    "note": "35 秒：本題情境目標是讓玩家提出假設，所以 B 較合適。A/C 並非在任何遊戲中都錯。"
+  },
+  {
+    "page": 13,
+    "title": "從來源到這份簡報",
+    "subtitle": "每一頁都能追溯到 Wiki",
+    "kind": "workflow",
+    "body": "<ol class=\"pipeline\"><li>讀取 5 篇資料</li><li>建立來源卡與概念頁</li><li>查詢 Wiki、寫逐頁稿</li><li>查核說法與引用</li><li>渲染、測試、修正</li></ol><p>來源讀不到：回資料取得。<br>說法不成立：回證據卡或文稿。<br>互動或版面出錯：回 HTML。</p><p class=\"muted\">詳細 graph、實際紀錄與反思另附於成果首頁。</p>",
+    "refs": [
+      "process/workflow.md",
+      "wiki/index.md"
+    ],
+    "note": "35 秒：區分 graph 的關卡與各節點的局部 loop。每次只修問題所在位置。"
+  },
+  {
+    "page": 14,
+    "title": "你可以如何驗證教學？",
+    "subtitle": "觀察真實玩家，而不只問「好玩嗎」",
+    "kind": "practice",
+    "body": "<p class=\"big\">他注意到什麼？<br>他預期什麼？<br><span class=\"accent\">換一道題還能解釋嗎？</span></p><p>記錄卡住的位置與當時假設，再調整線索或回饋。</p><p class=\"muted\">這是後續測試建議。本次完成的是內容與功能檢查，未進行真人測試。</p>",
+    "refs": [
+      "wiki/concepts/knowledge.md",
+      "wiki/sources/S2.md",
+      "process/workflow.md"
+    ],
+    "note": "35 秒：可邀同學試玩，用觀察補足自動測試不能判斷的學習效果。"
+  },
+  {
+    "page": 15,
+    "title": "讓玩家有理由繼續推理",
+    "subtitle": "可見線索、可比較的結果、適時的幫助",
+    "kind": "end",
+    "body": "<p class=\"big\">好的下一步，<br>是玩家能提出的新假設。</p><p>回想你熟悉的一款遊戲：它在哪個時刻讓你理解了一條規則？</p><p><a href=\"wiki.html\">閱讀完整 Wiki 與 5 篇來源 ↗</a><br><a href=\"report.html\">查看執行紀錄與反思 ↗</a></p>",
+    "refs": [
+      "wiki/index.md",
+      "wiki/concepts/support.md"
+    ],
+    "note": "30 秒：收束，請同學用一個例子回答。總預估約 10 分鐘，可依互動節奏調整。"
+  }
+]
